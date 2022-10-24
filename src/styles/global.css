@@ -38,6 +38,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  color: #333447;
 }
 
 /* A elements that don't have a class get default styles */
@@ -78,6 +79,53 @@ select {
 
 /* Custom styles */
 
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h2 {
+  margin-top: 1.4rem;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #333447;
+}
+
+.profile-container,
+h2 {
+  text-align: center;
+}
+
 .profile-container > img.profile {
   max-width: 5rem;
+  margin: 1rem auto;
+}
+
+.profile-container p {
+  padding: 0 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.profile-container p:last-child {
+  margin: 0;
+}
+
+main {
+  padding: 1.4rem;
+  flex-grow: 1;
+}
+
+.blogpost-list {
+  padding: 0;
+}
+
+footer {
+  padding: 0.4rem 1.4rem;
+  background-color: #333447;
+  color: white;
+  font-size: 0.6rem;
+  text-align: center;
 }
