@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -128,4 +130,79 @@ footer {
   color: white;
   font-size: 0.6rem;
   text-align: center;
+}
+
+p::selection {
+  color: #333447;
+  background-color: lightblue;
+}
+
+a::selection {
+  color: #333447;
+  background-color: lightblue;
+}
+
+/* custom styles */
+li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media (min-width: 639px) {
+  li {
+    flex-direction: row;
+    text-align: left;
+    max-width: 30rem;
+    margin: auto;
+    gap: 2rem;
+  }
+}
+
+li + li {
+  margin-top: 1rem;
+}
+
+li:nth-child(even) {
+  background-color: whitesmoke;
+  border-radius: 0.4rem;
+}
+
+.image-post {
+  width: 6rem;
+  aspect-ratio: 1 / 1;
+  height: 6rem;
+  border-radius: 9999px;
+}
+
+li h3 a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #333447;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+li h3 a:hover {
+  text-decoration: underline;
+}
+
+li div {
+  flex-grow: 1;
+}
+
+time {
+  font-size: 0.6rem;
+}
+
+li p {
+  max-width: 60ch;
 }
