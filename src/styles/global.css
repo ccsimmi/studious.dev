@@ -13,7 +13,7 @@
 /* Remove default margin */
 body,
 h1,
-h2,
+h1,
 h3,
 h4,
 p,
@@ -87,17 +87,17 @@ select {
   min-height: 100vh;
 }
 
-h2 {
+h1 {
   margin-top: 1.4rem;
 }
 
-h2 a {
+h1 a {
   text-decoration: none;
   color: #3d4b61;
 }
 
 .profile-container,
-h2 {
+h1 {
   text-align: center;
 }
 
@@ -125,7 +125,7 @@ main {
 }
 
 footer {
-  padding: 0.4rem 1.4rem;
+  padding: 1.2rem 1.4rem;
   background-color: #3d4b61;
   color: white;
   font-size: 0.6rem;
@@ -141,6 +141,8 @@ a:hover {
 }
 
 p::selection,
+h1::selection,
+h2::selection,
 a::selection,
 time::selection {
   color: white;
@@ -185,7 +187,7 @@ li:nth-child(even) {
   border-radius: 9999px;
 }
 
-li h3 a {
+li h3 a, h1 a, h1 {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 300;
@@ -195,6 +197,10 @@ li h3 a {
   line-height: 1.2;
   display: block;
   margin-bottom: 0.8rem;
+}
+
+h1 a {
+    font-size: 2rem;
 }
 
 li h3 a:hover {
@@ -211,4 +217,38 @@ time {
 
 li p {
   max-width: 60ch;
+}
+
+/* blog post layout */
+main .article {
+   max-width: 40rem;
+   margin: auto;
+}
+
+main .article img{
+   max-width: 100%;
+   border-radius: 0.2rem;
+   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.title {
+    text-align: left;
+}
+
+.article time {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: rgb(163, 163, 163)
+}
+
+.article p {
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
