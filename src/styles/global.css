@@ -156,6 +156,8 @@ li {
   padding: 1rem;
   justify-content: space-between;
   gap: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 @media (min-width: 639px) {
@@ -169,12 +171,11 @@ li {
 }
 
 li + li {
-  margin-top: 1rem;
+  margin-top: 1.4rem;
 }
 
 li:nth-child(even) {
   background-color: whitesmoke;
-  border-radius: 0.4rem;
 }
 
 .image-post {
