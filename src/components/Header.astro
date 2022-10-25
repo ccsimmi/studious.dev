@@ -1,12 +1,13 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../config';
+const { title } = Astro.props;
 ---
 
 <header>
   <h2>
     <HeaderLink href="/">
-      {SITE_TITLE}</HeaderLink
+      {title ?? SITE_TITLE}</HeaderLink
     >
   </h2>
 

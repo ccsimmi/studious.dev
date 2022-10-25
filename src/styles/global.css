@@ -132,12 +132,9 @@ footer {
   text-align: center;
 }
 
-p::selection {
-  color: #333447;
-  background-color: lightblue;
-}
-
-a::selection {
+p::selection,
+a::selection,
+time::selection {
   color: #333447;
   background-color: lightblue;
 }
