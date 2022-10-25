@@ -40,7 +40,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  color: #333447;
+  color: #3d4b61;
 }
 
 /* A elements that don't have a class get default styles */
@@ -93,7 +93,7 @@ h2 {
 
 h2 a {
   text-decoration: none;
-  color: #333447;
+  color: #3d4b61;
 }
 
 .profile-container,
@@ -126,17 +126,25 @@ main {
 
 footer {
   padding: 0.4rem 1.4rem;
-  background-color: #333447;
+  background-color: #3d4b61;
   color: white;
   font-size: 0.6rem;
   text-align: center;
 }
 
+a {
+  color: #3d4b61;
+}
+
+a:hover {
+  color: #3a75d4;
+}
+
 p::selection,
 a::selection,
 time::selection {
-  color: #333447;
-  background-color: lightblue;
+  color: white;
+  background-color: #3a75d4;
 }
 
 /* custom styles */
@@ -180,7 +188,7 @@ li h3 a {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 300;
-  color: #333447;
+  color: #3d4b61;
   font-family: 'Fredoka One', cursive;
   letter-spacing: 0.2rem;
   line-height: 1.2;
