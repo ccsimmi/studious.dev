@@ -81,6 +81,10 @@ select {
 
 /* Custom styles */
 
+header {
+  padding: 1rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -187,7 +191,9 @@ li:nth-child(even) {
   border-radius: 9999px;
 }
 
-li h3 a, h1 a, h1 {
+li h3 a,
+h1 a,
+h1 {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 300;
@@ -200,7 +206,7 @@ li h3 a, h1 a, h1 {
 }
 
 h1 a {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 li h3 a:hover {
@@ -221,34 +227,34 @@ li p {
 
 /* blog post layout */
 main .article {
-   max-width: 40rem;
-   margin: auto;
+  max-width: 40rem;
+  margin: auto;
 }
 
-main .article img{
-   max-width: 100%;
-   border-radius: 0.2rem;
-   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+main .article img {
+  max-width: 100%;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
 .title {
-    text-align: left;
+  text-align: left;
 }
 
 .article time {
-    font-size: 0.8rem;
-    font-weight: lighter;
-    color: rgb(163, 163, 163)
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: rgb(163, 163, 163);
 }
 
 .article p {
-    line-height: 2;
-    margin-bottom: 2rem;
+  line-height: 2;
+  margin-bottom: 2rem;
 }
 
 hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

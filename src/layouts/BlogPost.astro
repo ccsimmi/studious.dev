@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Picture from '../components/Picture.astro';
 
 export interface Props {
   content: {
@@ -11,11 +12,12 @@ export interface Props {
     updatedDate?: string;
     heroImage?: string;
     alt?: string;
+    srcset?: string;
   };
 }
 
 const {
-  content: { title, description, pubDate, updatedDate, heroImage, alt },
+  content: { title, description, pubDate, updatedDate, heroImage, alt, srcset },
 } = Astro.props;
 ---
 
@@ -27,7 +29,8 @@ const {
     <Header title="Studious Dev" />
     <main>
       <article class="article">
-        {heroImage && <img src={heroImage} alt={alt} />}
+        <Picture alt={alt} src={heroImage} srcset={srcset} />
+
         <h1 class="title">{title}</h1>
         {pubDate && <time>{pubDate}</time>}
         {

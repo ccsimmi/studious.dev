@@ -3,8 +3,10 @@ layout: '../../layouts/BlogPost.astro'
 title: 'Markdown Style Guide'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jul 01 2022'
-heroImage: '/images/galaxy.jpg'
-alt: "The milky way"
+heroImage: '/images/city/city-small.jpg'
+alt: 'City skyline in the night sky'
+srcset: '/images/city/city-small.jpg 640w,
+/images/city/city-large.jpg 1920w'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
