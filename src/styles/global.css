@@ -189,6 +189,7 @@ li:nth-child(even) {
   aspect-ratio: 1 / 1;
   height: 6rem;
   border-radius: 9999px;
+  object-fit: cover;
 }
 
 li h3 a,
@@ -223,6 +224,10 @@ time {
 
 li p {
   max-width: 60ch;
+}
+
+p img {
+  margin: auto;
 }
 
 /* blog post layout */
