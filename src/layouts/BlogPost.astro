@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Picture from '../components/Picture.astro';
+import HomeLinkIcon from '../components/HomeLinkIcon.astro';
 
 export interface Props {
   content: {
@@ -27,6 +28,7 @@ const {
   </head>
   <body>
     <Header title="Studious Dev" />
+    <HomeLinkIcon />
     <main>
       <article class="article">
         <Picture alt={alt} src={heroImage} srcset={srcset} />

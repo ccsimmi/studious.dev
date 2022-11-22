@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+:root {
+  font-size: 20px;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -132,7 +136,7 @@ footer {
   padding: 1.2rem 1.4rem;
   background-color: #3d4b61;
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 
@@ -249,7 +253,7 @@ main .article img {
 .article time {
   font-size: 0.8rem;
   font-weight: lighter;
-  color: rgb(163, 163, 163);
+  color: rgb(90, 90, 90);
 }
 
 .article p {
@@ -262,4 +266,38 @@ hr {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.go-home-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #3a75d4;
+  color: white;
+  position: fixed;
+  border-radius: 80px;
+  padding: 5px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.go-home-icon:hover {
+  color: white;
+  background-color: #3162b1;
+}
+
+.go-home-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 639px) {
+  .go-home-icon {
+    bottom: 0;
+    right: 0;
+    top: 30px;
+    left: 30px;
+  }
 }
