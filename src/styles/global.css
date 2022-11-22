@@ -240,7 +240,7 @@ main .article {
   margin: auto;
 }
 
-main .article img {
+main .article img, .image {
   max-width: 100%;
   border-radius: 0.2rem;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);

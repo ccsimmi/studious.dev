@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE_ERROR, SITE_DESCRIPTION_ERROR } from '../config';
+import Picture from '../components/Picture.astro';
 ---
 
 <!DOCTYPE html>
@@ -11,29 +12,42 @@ import { SITE_TITLE_ERROR, SITE_DESCRIPTION_ERROR } from '../config';
     <BaseHead title={SITE_TITLE_ERROR} description={SITE_DESCRIPTION_ERROR} />
   </head>
   <body>
-    <Header title="Oops!" />
+    <Header title="Well thats awkward..." />
     <main>
       <section>
         <p>
           This page doesn't exist! Click here to <a href="/">return home</a>.
         </p>
+        <Picture
+          alt="awkward face"
+          src="/images/404/error-small.jpg"
+          srcset="/images/404/error-small.jpg 640w, /images/404/error-large.jpg 1920w"
+        />
       </section>
     </main>
     <Footer />
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-      }
-
-      footer {
-        align-self: flex-end;
-      }
-
-      p {
-        text-align: center;
-      }
-    </style>
   </body>
 </html>
+
+<style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    footer {
+      align-self: flex-end;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    section {
+        max-width: 30rem;
+        margin: auto;
+    }
+  </style>
+
