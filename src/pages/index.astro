@@ -37,9 +37,9 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
                     src={post.frontmatter.heroImage}
                   />
                   <div>
-                    <h3>
+                    <h2>
                       <a href={post.url}>{post.frontmatter.title}</a>
-                    </h3>
+                    </h2>
                     <time datetime={post.frontmatter.pubDate}>
                       {new Date(post.frontmatter.pubDate).toLocaleDateString(
                         'en-us',
